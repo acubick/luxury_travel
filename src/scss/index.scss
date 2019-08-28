@@ -6,7 +6,16 @@
 "base/base",
 "base/helpers";
 
+
+.wrapper_out{
+  //max-width: 1600px;
+  width : 100%;
+  background-color : #e7eaf0;
+}
+
+
 @import "blocks/header";
+
 
 
 

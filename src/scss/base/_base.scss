@@ -43,14 +43,13 @@ p {
  */
 
 a {
-  color           : $brand-color;
   text-decoration : none;
 }
 
-@include on-event {
-  color           : $text-color;
-  text-decoration : underline;
-}
+//@include on-event {
+//  color           : $text-color;
+//  text-decoration : underline;
+//}
 
 ::placeholder {
   color : #666;
