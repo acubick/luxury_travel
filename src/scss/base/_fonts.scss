@@ -1,0 +1,10 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+// @import "../abstracts/font-face";
+/// test sassdoc
+/// @author acubick
+@include font-face("bignoodletitlingregular", "../fonts/BigNoodleTitling/big_noodle_titling");
+@include font-face("open-sans-bold", "../fonts/OpenSansBold/OpenSansBold", bold);
+@include font-face("open-sans-regular", "../fonts/OpenSansRegular/OpenSansRegular", normal);
+@include font-face("fontello", "../fonts/fontello/fontello");
