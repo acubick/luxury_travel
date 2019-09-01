@@ -28,5 +28,7 @@ $bg-color-grey: #ebebeb;
 $neutral-primary: #303133;
 
 $transitionLink: all 0.2s linear;
+$backgroundHover: darken($text-color, 65%);
+$colorHover: darken($text-color, 20%);
 
 $base-url: '/assets/' !default;

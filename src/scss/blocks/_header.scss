@@ -61,7 +61,7 @@
     transition: $transitionLink;
   }
   a:hover{
-    color: darken($text-color, 20%)
+    color: $colorHover
   }
   
 }
@@ -90,7 +90,7 @@
     transition: $transitionLink;
   }
   li:hover{
-    background-color: darken(#fff, 65%);
+    background-color: $backgroundHover;
   }
   a {
     display : flex;
@@ -126,5 +126,73 @@
 }
   //============ header__bottom =================//
 .header__bottom {
-  height : 50px;
+  height : 5.2rem;
+}
+.header__logo{
+  padding-top : 1rem;
+}
+
+.logo{
+  margin-left : -3px;
+  
+  a{
+	color: white;
+	display : flex;
+	.icon-joomla{
+	  font-family : 'fontello', sans-serif;
+	  font-size: 48px;
+	}
+	.logo__name{
+	  margin-left : 1rem;
+	  margin-top: 2px;
+	  padding-top : 12px;
+	}
+	h1{
+	  font-family: "bignoodletitlingregular", sans-serif;
+	  font-size: 40px;
+	  font-weight: 400;
+	  letter-spacing: 2px;
+	  text-transform: uppercase;
+	  line-height: 24px;
+	  span{
+		color: #007bff;
+	  }
+	  
+	}
+ 
+	p{
+	  margin-top: 1px;
+	  margin-left: 4px;
+	  font-family: open-sans-regular,sans-serif;
+	  font-size: 13px;
+	  letter-spacing: 1.3px;
+	  line-height: 1;
+	  text-transform : uppercase;
+	}
+  }
+}
+
+.header__menu{
+  width: 664px;
+  height: 100%;
+  padding: 1rem 0;
+  margin-right: -1.4rem;
+  
+  nav{
+	display : flex;
+	justify-content: space-between;
+	align-items: center;
+	a{
+	  padding : 0.7rem 1rem;
+	  font-family: open-sans-regular,sans-serif;
+	  font-size: 20px;
+	  font-weight: 400;
+	  color: $text-color;
+	  transition: $transitionLink;
+	}
+	a:hover{
+	  background-color: $backgroundHover;
+	  color: $colorHover;
+	}
+  }
 }
