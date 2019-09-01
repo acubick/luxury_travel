@@ -7,15 +7,16 @@
 "base/helpers";
 
 
-.wrapper_out{
+.wrapper_out {
   //max-width: 1600px;
-  width : 100%;
-  background-color : #e7eaf0;
+  width            : 100%;
+  //background-color : #e7eaf0;
+  padding-bottom : 200px;
 }
 
 
-@import "blocks/header";
-
+@import "blocks/header",
+"blocks/intro";
 
 
 

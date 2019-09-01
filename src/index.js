@@ -1,5 +1,5 @@
 import 'jquery'
-//import './css/index.css'
+import './css/index.css'
 import './scss/index.scss'
 import AppService from './modules/app.service'
 import { config } from './modules/config'

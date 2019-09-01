@@ -1,9 +1,9 @@
 .header {
-  
+  position: absolute;
+  top: 0;
   width            : 100%;
   background-color : rgba(0, 0, 0, 0.75);
   color            : $text-color;
-  
 }
 
 .header__inner {
@@ -26,13 +26,13 @@
   margin  : 0 -1.6rem;
   width   : 50%;
   display : inline-block;
-  
+
 }
 
 .contacts {
   max-width    : 150px;
   margin-right : 2em;
-  
+
   span {
 	padding  : 0;
 	margin   : 0;
@@ -40,15 +40,15 @@
 	left     : -2px;
 	position : absolute;
   }
-  
+
   .icon {
 	font-size : 1rem;
   }
-  
+
   .icon-phone {
 	left : -9px;
   }
-  
+
   a {
 	font-family      : "Open Sans", sans-serif;
 	color            : $text-color;
@@ -63,7 +63,7 @@
   a:hover{
     color: $colorHover
   }
-  
+
 }
 
 .header__links {
@@ -80,10 +80,9 @@
   list-style-type : none;
   margin : -2px 2.2rem 0;
   padding : 0;
-  
+
   li {
 	cursor           : pointer;
-    background-color: transparent;
     width        : 30px;
     height : 30px;
     border-radius: 50%;
@@ -105,7 +104,7 @@
    a:hover{
      color: darken($text-color, 20%)
    }
-  
+
   .icon {
 	font-size : 1.067rem;
   }
@@ -134,7 +133,6 @@
 
 .logo{
   margin-left : -3px;
-  
   a{
 	color: white;
 	display : flex;
@@ -157,9 +155,9 @@
 	  span{
 		color: #007bff;
 	  }
-	  
+
 	}
- 
+
 	p{
 	  margin-top: 1px;
 	  margin-left: 4px;
@@ -177,7 +175,7 @@
   height: 100%;
   padding: 1rem 0;
   margin-right: -1.4rem;
-  
+  background-color : transparent;
   nav{
 	display : flex;
 	justify-content: space-between;
@@ -187,11 +185,12 @@
 	  font-family: open-sans-regular,sans-serif;
 	  font-size: 20px;
 	  font-weight: 400;
+	  border-bottom: 3px solid transparent;
 	  color: $text-color;
 	  transition: $transitionLink;
 	}
 	a:hover{
-	  background-color: $backgroundHover;
+	  border-bottom-color:  $backgroundHover;;
 	  color: $colorHover;
 	}
   }

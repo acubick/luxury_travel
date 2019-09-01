@@ -13,12 +13,18 @@ const PATHS = {
 	dist:   path.join( __dirname, 'dist' ),
 	assets: 'assets/'
 }
-
+   // TODO: нет css файла после компиляции
 module.exports = {
-	entry:        PATHS.src,
+	externals:    {
+		paths: PATHS
+	},
+	entry:        {
+		index: [ '@babel/polyfill', `${ PATHS.src }/index.js` ]
+	},
 	output:       {
-		filename:   `${ PATHS.assets }js/[name].[hash].js`,
-		path:       PATHS.dist,
+//    filename: `${PATHS.assets}js/[name].[hash].js`,
+		filename:   `${ PATHS.assets }js/[name].js`,
+		path:       `${ PATHS.dist }`,
 		publicPath: '/'
 	},
 	devtool:      'cheap-module-eval-source-map',
@@ -32,13 +38,16 @@ module.exports = {
 		}
 	},
 	optimization: {
-		minimizer:   [ new TerserPlugin(), new OptimizeCssAssetsPlugin( {} ) ],
+		minimizer:   [
+			new TerserPlugin( {} ),
+			new OptimizeCssAssetsPlugin( {} )
+		],
 		splitChunks: {
 			cacheGroups: {
 				vendor: {
 					name:    'vendors',
 					test:    /node_modules/,
-					chunks:  'all',
+//					chunks:  'all',
 					enforce: true
 				}
 			}
@@ -48,9 +57,13 @@ module.exports = {
 		new CleanWebpackPlugin(),
 		new WebpackBar(),
 		new HtmlWebpackPlugin( {
-			filename: 'index.html',
-			title:    'Luxury Travel',
-			template: `${ PATHS.src }/index.html`
+			hash:         false,
+			title:        'Luxury Travel',
+			myPageHeader: 'Luxury Travel',
+			template:     `${ PATHS.src }/index.html`,
+			chunks:       [ 'vendor', 'index' ],
+			filename:     'index.html' //relative to root of the application
+//			inject:       true
 		} ),
 		new MiniCssExtractPlugin( {
 			filename: `${ PATHS.assets }css/[name].[hash].css`
@@ -59,6 +72,10 @@ module.exports = {
 			{
 				from: `${ PATHS.src }/assets/img/`,
 				to:   `${ PATHS.dist }/assets/img/[name].[ext]`
+			},
+			{
+				from: `${ PATHS.src }/static`,
+				to:   ``
 			}
 		] ),
 		//для полного билда закоментировать нижний плагин
@@ -66,6 +83,9 @@ module.exports = {
 			filename: '[file].map'
 		} )
 	],
+	resolve:      {
+		extensions: [ '.js', '.ts' ]
+	},
 	module:       {
 		rules: [
 			{
@@ -80,11 +100,13 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.(sa|sc)ss$/,
+				test: /\.scss$/,
+//					process.env.NODE_ENV !== 'production'
+//					?
+//					'style-loader',
+//					:
 				use:  [
-					process.env.NODE_ENV !== 'production'
-					? 'style-loader'
-					: MiniCssExtractPlugin.loader,
+					MiniCssExtractPlugin.loader,
 					{
 						loader:  'css-loader',
 						options: {
@@ -106,28 +128,28 @@ module.exports = {
 					}
 				]
 			},
-			{
-				test: /\.less$/,
-				use:  [
-					//выключил потому что перебивает все sourcemap
-					//					process.env.NODE_ENV !== 'production'
-					//					? 'style-loader'
-					//					:
-					MiniCssExtractPlugin.loader,
-					{
-						loader:  'css-loader',
-						options: {
-							sourceMap: true
-						}
-					},
-					{
-						loader:  'less-loader',
-						options: {
-							sourceMap: true
-						}
-					}
-				]
-			},
+//			{
+//				test: /\.less$/,
+//				use:  [
+//					//выключил потому что перебивает все sourcemap
+//					//					process.env.NODE_ENV !== 'production'
+//					//					? 'style-loader'
+//					//					:
+//					MiniCssExtractPlugin.loader,
+//					{
+//						loader:  'css-loader',
+//						options: {
+//							sourceMap: true
+//						}
+//					},
+//					{
+//						loader:  'less-loader',
+//						options: {
+//							sourceMap: true
+//						}
+//					}
+//				]
+//			},
 			{
 				test: /\.(gif|png|jpe?g|svg)$/i,
 				use:  [
