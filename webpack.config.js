@@ -70,14 +70,18 @@ module.exports = {
 		} ),
 		new CopyWebpackPlugin( [
 			{
-				from: `${ PATHS.src }/assets/img/`,
-				to:   `${ PATHS.dist }/assets/img/[name].[ext]`
+				context: './src/',
+				from: `${ PATHS.src }/assets/**/*`,
+				to:   `${ PATHS.dist}`,
+			 force:true
 			},
 			{
 				from: `${ PATHS.src }/static`,
 				to:   ``
 			}
-		] ),
+		],
+//			{ copyUnmodified: true }
+			),
 		//для полного билда закоментировать нижний плагин
 		new webpack.SourceMapDevToolPlugin( {
 			filename: '[file].map'

@@ -81,3 +81,22 @@
   text-align:center;
   vertical-align: center;
 }
+
+.title{
+  font-family: bignoodletitlingregular, sans-serif;
+  font-size:  3.333rem;
+  line-height: 1.2;
+  letter-spacing: 2.5px;
+  text-align : center;
+  margin-right: -3rem;
+  margin-top: -2px;
+}
+
+.notice{
+  font-family: open-sans-regular, sans-serif;
+  font-size: 1.333rem;
+  max-width: 960px;
+  margin : 0 auto;
+  text-align-last: center;
+  line-height : 1.3;
+}
