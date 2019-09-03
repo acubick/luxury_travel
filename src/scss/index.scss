@@ -15,9 +15,15 @@
 }
 
 
+.container{
+  background-color : pink;
+}
+
 @import "blocks/header",
 "blocks/intro",
-"blocks/type";
+"blocks/type",
+"blocks/discounts";
+
 
 
 
