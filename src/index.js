@@ -13,3 +13,6 @@ import { config } from './modules/config'
 //const $head = document.getElementsByTagName('header')
 //console.log('head jquery work',  $head )
 console.log( 'I am working' )
+//const name = "Lydia Hallie"
+//console.log(name.padStart(13))
+//console.log(name.padStart(2))

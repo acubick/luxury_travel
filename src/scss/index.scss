@@ -6,6 +6,9 @@
 "base/base",
 "base/helpers";
 
+.wrapper{
+  padding-bottom : 11rem;
+}
 
 .wrapper_out {
   //max-width: 1600px;
@@ -22,7 +25,9 @@
 @import "blocks/header",
 "blocks/intro",
 "blocks/type",
-"blocks/discounts";
+"blocks/discounts",
+"blocks/trips",
+"blocks/events";
 
 
 
