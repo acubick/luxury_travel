@@ -32,6 +32,8 @@
   
   background-color : $default-color;
   padding: 9px 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
   &__picture{
     display : block;
     margin-bottom : 1.9rem;
@@ -94,4 +96,26 @@
     padding : 0 0.9rem;
   }
   
+}
+.events-card::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+  left : 0;
+  top: 0;
+}
+
+.events-card:hover{
+  transform: scale(1.01, 1.01);
+  //background-color : lighten($colorCardTitle, 10%);
+  box-shadow: 1px 5px 25px -5px #8d8d8d;
+}
+/* Плавно показываем псевдокласс с большой тенью */
+.events-card:hover::after {
+  opacity: 1;
 }

@@ -43,6 +43,32 @@
   background-color : #fff;
   overflow         : hidden;
   margin: 0 13px;
+  box-shadow: 0 2px 2px rgba(22, 33, 252, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+/* Создаем скрытый псевдокласс */
+/* Добавляем конечное состояние тени */
+.discounts__card::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  box-shadow: 0 5px 5px rgba(61, 81, 255, 0.3);
+  transition: opacity 0.3s ease-in-out;
+  left : 0;
+  top: 0;
+}
+
+.discounts__card:hover{
+  transform: scale(1.03, 1.03);
+  //background-color : lighten($colorCardTitle, 10%);
+  box-shadow: 1px 5px 25px -5px rgba(22, 33, 252, 0.8);
+}
+/* Плавно показываем псевдокласс с большой тенью */
+.discounts__card:hover::after {
+  opacity: 1;
 }
 
 
@@ -131,5 +157,9 @@
    cursor: pointer;
    outline: none;
    border-style: outset;
+   transition: all 0.3s ease-in-out;
  }
+.card__button:hover{
+  background-color: lighten($buttonColor, 10%);
+}
  

@@ -1,3 +1,4 @@
+@import "findForm";
 .intro {
   position            : relative;
   top                 : 0;
@@ -6,7 +7,6 @@
   background-color    : blue;
   background-image    : url("../assets/img/intro.png");
   background-position : -223px -1px;
-  z-index             : -1;
 }
 
 .intro__wrap {

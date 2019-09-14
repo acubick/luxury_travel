@@ -4,6 +4,7 @@
   width            : 100%;
   background-color : rgba(0, 0, 0, 0.75);
   color            : $text-color;
+  z-index: 1;
 }
 
 .header__inner {
