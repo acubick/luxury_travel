@@ -4,7 +4,7 @@
   width            : 100%;
   background-color : rgba(0, 0, 0, 0.75);
   color            : $text-color;
-  z-index: 1;
+  z-index: 20;
 }
 
 .header__inner {
@@ -21,6 +21,7 @@
   justify-content : space-between;
   border-bottom   : 1px solid rgba(255, 255, 255, 0.42);
   padding         : 0.2rem 0 0;
+  z-index: 21;
 }
 
 .header__contacts {
@@ -133,6 +134,7 @@
 //============ header__bottom =================//
 .header__bottom {
   height : 5.2rem;
+  z-index: 2;
 }
 
 .header__logo {
@@ -141,6 +143,7 @@
 
 .logo {
   margin-left : -3px;
+ 
   
   a {
 	color   : white;
@@ -202,6 +205,7 @@
 	  font-weight   : 400;
 	  border-bottom : 3px solid transparent;
 	  color         : $text-color;
+	  cursor: pointer;
 	  transition    : $transitionLink;
 	}
 	
