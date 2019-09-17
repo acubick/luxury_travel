@@ -1,18 +1,16 @@
 .find__tours {
-  position : absolute;
-  
-  bottom   : 114px;
-  right    : 266px;
+ margin-right: -33px;
+  margin-bottom : -106px;
+  z-index: 100;
 }
 
 .find__tours.active {
-  display : block;
 }
 
 .find-tours {
-  width            : 509px;
-  height           : 599px;
-  padding          : 46px 39px 63px 44px;
+  min-width            : 509px;
+  min-height           : 599px;
+  padding          : 46px 39px 50px 44px;
   z-index          : 10;
   display          : flex;
   flex-direction   : column;
@@ -28,11 +26,11 @@
 	font-weight      : 400;
 	line-height      : 2;
 	padding          : 11px 40px 11px 21px;
-	margin-bottom    : 26px;
+	margin-bottom    : 24px;
 	border-radius    : 5px;
 	background-color : #f2f2f2;
-	border           : none;
 	outline          : none;
+	border: 1px dotted transparent;
   }
   input:focus{
 	background-color : lighten(#f2f2f2, 5%);
@@ -94,7 +92,7 @@
   position: absolute;
   color: $mainFontColor;
   z-index: 1;
-  top: 0;
+  top: 20px;
   right: 24px;
   cursor: pointer;
 }

@@ -12,22 +12,22 @@
 .trips__deals {
    display: flex;
   flex-wrap: wrap;
+  margin-right: -1px;
 }
 
-.trips__deal {
+.trips__deal{
 
+
+ 
 }
 
 .deal {
-  width : calc(33.3% - 1px);
+  width : calc(33.333% - 1px);
   position: relative;
   overflow: hidden;
   height: 409px;
   margin-right : 1px;
   margin-bottom: 1px;
-  &:nth-last-child{
-	margin-right: 0;
-  }
   &__img{
 	position: absolute;
 	top : 50%;
