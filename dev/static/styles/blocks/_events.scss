@@ -1,0 +1,121 @@
+.events{
+  padding:  6.55rem 0 8rem;
+  background-color: $bg-color-grey;
+  .container{
+    max-width: $max-width + 40px; /* 1 */
+  }
+}
+
+
+
+.events__text{
+  margin-bottom: 3.625rem;
+}
+.events__title{
+  margin-bottom: 1.6rem;
+  width: 102%;
+}
+
+ .events__cards{
+   max-width: 1185px;
+   width : 100%;
+   display : flex;
+   justify-content: space-between;
+ }
+.events__card{
+  max-width: 373px;
+  height : 497px;
+  }
+.events-card{
+  
+  width: 100%;
+  
+  background-color : $default-color;
+  padding: 9px 12px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+  &__picture{
+    display : block;
+    margin-bottom : 1.9rem;
+    img {
+      width : 100%;
+      height : auto;
+    }
+  }
+  &__features{
+    font-family: open-sans-regular, sans-serif;
+    font-size: 1rem;
+  }
+  &__title{
+    margin-left : 14px;
+    color: $colorCardTitle;
+    font-family: open-sans-bold, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom : 1.8rem;
+  }
+
+  &__info{
+    margin-bottom : 1.9rem;
+  }
+  &__user{
+    position: relative;
+   height: 25px;
+    width: 49%;
+    display : inline-block;
+    padding-left : 40px;
+  
+  }
+  &__user:before{
+    content: '\e806';
+    left : 14px;
+  }
+  &__date{
+    position: relative;
+    height: 25px;
+    width: 49%;
+    display : inline-block;
+    padding-left : 11px;
+  }
+  &__date:before{
+    content: '\e805';
+    left : -15px;
+  }
+  &__user:before,
+  &__date:before{
+    position: absolute;
+    font-family : fontello, sans-serif;
+    font-size: 1.4rem;
+    top: -2px;
+  
+  }
+  &__description{
+    color: $mainFontColor;
+    font-weight: 400;
+    line-height: 1.6;
+    padding : 0 0.9rem;
+  }
+  
+}
+.events-card::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+  left : 0;
+  top: 0;
+}
+
+.events-card:hover{
+  transform: scale(1.01, 1.01);
+  //background-color : lighten($colorCardTitle, 10%);
+  box-shadow: 1px 5px 25px -5px #8d8d8d;
+}
+/* Плавно показываем псевдокласс с большой тенью */
+.events-card:hover::after {
+  opacity: 1;
+}

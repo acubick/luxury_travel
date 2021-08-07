@@ -1,0 +1,61 @@
+.travel {
+    position: relative;
+    width: 100%;
+    height: 698px;
+    background-image: url("../images/bg_luxury_travel.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.travel__info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.47);
+    display: flex;
+}
+
+.travel-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -12px;
+}
+
+.travel-info__caption {
+    color: $default-color;
+    font-family: bignoodletitlingregular, sans-serif;
+    font-size: 9.867rem;
+    font-weight: 400;
+    line-height: 0.5;
+    letter-spacing: 7.5px;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 6rem;
+    margin-right: -10px;
+}
+
+.travel-info__title {
+    color: $default-color;
+    padding-bottom: 15px;
+    margin-left: -17px;
+}
+
+.travel-info__button {
+    background-color: $colorCardTitle;
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    outline: none;
+    border: 0;
+    color: $default-color;
+    font-family: open-sans-bold, sans-serif;
+    font-size: 1.1rem;
+    line-height: 10;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: -22px;
+}

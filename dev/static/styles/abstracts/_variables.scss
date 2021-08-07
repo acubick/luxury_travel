@@ -1,0 +1,35 @@
+// Font
+// $mainFont                : 'Montserrat', Helvetica, Arial, sans-serif
+$default-font: "open-sans-regular", sans-serif;
+$accent: blue;
+// Size
+$mainFontColor: #606060;
+$mainFontSize: 15px;
+$mainFontWeight: 400;
+$mainLineHeight: 1.4;
+$max-width: 1180px;
+//$desktopWidth: 1280px
+$smDesktopWidth: 980px;
+$tableWidth: 768px;
+$phoneWidth: 480px;
+$smPhoneWidth: 320px;
+// Main color
+$default-color: #ffffff;
+$primary-color: #444ce0;
+$success-color: #26de81;
+$danger-color: #fc5c65;
+$warning-color: #fed330;
+$light-color: #999999;
+$purple-color: #8854d0;
+$brand-color: #666;
+$text-color: #fff;
+$bg-color-grey: #ebebeb;
+// Neutral Color
+$neutral-primary: #303133;
+
+$transitionLink: all 0.2s linear;
+$backgroundHover: darken($text-color, 60%);
+$colorHover: darken($text-color, 10%);
+$buttonColor: #006fe6;
+$colorCardTitle: #47a0ff;
+$base-url: '/assets/' !default;

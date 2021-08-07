@@ -1,0 +1,232 @@
+footer {
+    .container {
+        max-width: 1220px;
+    }
+}
+
+.footer-primary {
+    width: 100%;
+    padding-top: 86px;
+}
+
+.footer-primary__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-primary__width {
+    width: 25%;
+    height: 246px;
+}
+
+.footer-primary__width:first-child {
+    width: 30%;
+}
+
+.footer__title {
+    color: $mainFontColor;
+    font-family: bignoodletitlingregular, sans-serif;
+    font-size: 2rem;
+    letter-spacing: 1.4px;
+    text-align: left;
+}
+
+.findfinder__title {
+    margin-bottom: 26px;
+}
+
+.findfinder__address {
+    display: flex;
+    flex-direction: column;
+}
+
+.findfinder__contact {
+    color: $mainFontColor;
+    font-family: open-sans-regular, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.95;
+    font-style: normal;
+}
+
+.follow {
+    padding-left: 10px;
+}
+
+.support {
+    width: 20%;
+    padding-left: 12px;
+    &__title {
+        margin-bottom: 1.7rem;
+    }
+    &__list {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    &__item {
+        list-style-type: none;
+    }
+    &__link {
+        color: $mainFontColor;
+        font-family: open-sans-regular, sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.95;
+    }
+}
+
+.follow {}
+
+.follow__title {
+    margin-bottom: 1.559rem;
+}
+
+.follow__social {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+}
+
+.follow-social__item {
+    list-style-type: none;
+    margin-right: 11.3px;
+}
+
+.f-icon {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $colorCardTitle;
+    font-size: 16px;
+    line-height: 2.7;
+    color: $text-color;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Создаем скрытый псевдокласс */
+
+
+/* Добавляем конечное состояние тени */
+
+.f-icon::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease-in-out;
+    left: 0;
+    top: 0;
+}
+
+.f-icon:hover {
+    transform: scale(1.08, 1.08);
+    //background-color : lighten($colorCardTitle, 10%);
+    box-shadow: 1px 5px 25px -5px #8d8d8d;
+}
+
+
+/* Плавно показываем псевдокласс с большой тенью */
+
+.f-icon:hover::after {
+    opacity: 1;
+}
+
+.newsletter {
+    padding: 0 15px 0 10px;
+    &__title {
+        margin-bottom: 1.4rem;
+    }
+    form {
+        width: 100%;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+    }
+    .email__input {
+        border: none;
+        outline: none;
+        padding: 20px 0 20px 14px;
+        width: 70%;
+        background-color: transparent;
+        color: $mainFontColor;
+        font-size: 1rem;
+    }
+    .email__input::placeholder {
+        color: $mainFontColor;
+        font-family: open-sans-regular, sans-serif;
+        font-size: 0.8rem;
+        font-weight: 400;
+        line-height: 2;
+    }
+    button[type="submit"] {
+        width: 76px;
+        font-family: open-sans-bold, sans-serif;
+        font-size: 1rem;
+        height: 45px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        color: $default-color;
+        background-color: $buttonColor;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: all .25s;
+    }
+    button[type="submit"]:hover {
+        background-color: lighten($buttonColor, 10%)
+    }
+}
+
+//========== FOOTER-SECONDARY ==============//
+.footer-secondary {
+    width: 100%;
+}
+
+.footer-secondary:before {
+    content: '';
+    display: block;
+    border-top: 1px solid #d0d0d0;
+    opacity: 0.7;
+}
+
+.footer-secondary__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0 5px;
+}
+
+.footer-secondary__copy-text {
+    color: $mainFontColor;
+    font-family: open-sans-regular, sans-serif;
+    font-size: 0.8rem;
+    line-height: 2;
+    letter-spacing: 0.5px;
+}
+
+.footer-secondary__copy-design {
+    display: flex;
+    flex-direction: row;
+    color: $brand-color;
+    font-family: open-sans-regular, sans-serif;
+    font-size: 0.75rem;
+    line-height: 2;
+    letter-spacing: 0.8px;
+    padding-right: 17px;
+    margin-top: 5px;
+}
+
+.copy-design__icon {
+    display: block;
+    width: 29px;
+    height: 26px;
+    background-image: url("../images/bee@2x.png");
+    background-size: cover;
+    margin: -5px 5px 0;
+}

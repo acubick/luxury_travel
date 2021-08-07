@@ -1,0 +1,31 @@
+@import "abstracts/variables",
+"abstracts/mixins",
+"abstracts/functions",
+"abstracts/fonts",
+"base/fonts",
+"base/base",
+"base/helpers";
+// @import "outline";
+.wrapper {
+    //padding-bottom : 11rem;
+}
+
+.wrapper_out {
+    //max-width: 1600px;
+    width: 100%;
+    //background-color : #e7eaf0;
+    padding-bottom: 200px;
+}
+
+.container {
+    //background-color : pink;
+}
+
+@import "blocks/header",
+"blocks/intro",
+"blocks/type",
+"blocks/discounts",
+"blocks/trips",
+"blocks/events",
+"blocks/travel",
+"blocks/footer";
