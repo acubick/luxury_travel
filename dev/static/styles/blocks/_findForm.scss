@@ -1,94 +1,96 @@
-.find__tours {
- margin-right: -33px;
-  margin-bottom : -106px;
-  z-index: 100;
-}
 
-.find__tours.active {
-}
+	.find-tours.active {
+		display: flex;
+	}
 
 .find-tours {
-  min-width            : 509px;
-  min-height           : 599px;
-  padding          : 46px 39px 50px 44px;
-  z-index          : 10;
-  display          : flex;
-  flex-direction   : column;
-  background-color : $default-color;
-    label{
-	  position: relative;
-	}
+	margin-right: -33px;
+  margin-bottom: -106px;
+  z-index: 100;
+  min-width: 509px;
+  min-height: 599px;
+  padding: 46px 39px 50px 44px;
+  z-index: 10;
+  flex-direction: column;
+  background-color: $default-color;
+	display: none;
+	position: absolute;
+	right: 0;
+  label {
+    position: relative;
+  }
   input {
-	width            : 100%;
-	color            : $mainFontColor;
-	font-family      : open-sans-regular, sans-serif;
-	font-size        : 1.1rem;
-	font-weight      : 400;
-	line-height      : 2;
-	padding          : 11px 40px 11px 21px;
-	margin-bottom    : 24px;
-	border-radius    : 5px;
-	background-color : #f2f2f2;
-	outline          : none;
-	border: 1px dotted transparent;
+    width: 100%;
+    color: $mainFontColor;
+    font-family: open-sans-regular, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 2;
+    padding: 11px 40px 11px 21px;
+    margin-bottom: 24px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    outline: none;
+    border: 1px dotted transparent;
   }
-  input:focus{
-	background-color : lighten(#f2f2f2, 5%);
-	border: 1px dotted lightseagreen;
+
+  input:focus {
+    background-color: lighten(#f2f2f2, 5%);
+    border: 1px dotted lightseagreen;
   }
-  
+
   input::placeholder {
-	color       : $mainFontColor;
-	font-family : open-sans-regular, sans-serif;
+    color: $mainFontColor;
+    font-family: open-sans-regular, sans-serif;
   }
- 
+
   button {
-	width            : 100%;
-	color            : $default-color;
-	font-family      : open-sans-bold, sans-serif;
-	font-size        : 1.1rem;
-	line-height      : 2;
-	text-transform   : uppercase;
-	padding          : 11px 0;
-	background-color : $buttonColor;
-	margin-top       : -3px;
-	border-radius    : 5px;
-	cursor           : pointer;
-	pointer-events   : auto;
-	transition: all 0.3s ease-in-out;
+    width: 100%;
+    color: $default-color;
+    font-family: open-sans-bold, sans-serif;
+    font-size: 1.1rem;
+    line-height: 2;
+    text-transform: uppercase;
+    padding: 11px 0;
+    background-color: $buttonColor;
+    margin-top: -3px;
+    border-radius: 5px;
+    cursor: pointer;
+    pointer-events: auto;
+    transition: all 0.3s ease-in-out;
   }
-  button:hover{
-	background-color : lighten($buttonColor, 10%);
+  button:hover {
+    background-color: lighten($buttonColor, 10%);
   }
 }
 
 .find-tours__title {
-  color          : $mainFontColor;
-  font-family    : bignoodletitlingregular, sans-serif;
-  font-size      : 4.667rem;
-  font-weight    : 400;
-  line-height    : 0.9;
-  letter-spacing : 3.5px;
-  text-align     : center;
-  margin-left    : -24px;
-  margin-bottom : 3px;
+  color: $mainFontColor;
+  font-family: bignoodletitlingregular, sans-serif;
+  font-size: 4.667rem;
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: 3.5px;
+  text-align: center;
+  margin-left: -24px;
+  margin-bottom: 3px;
 }
 
 .find-tours__subtitle {
-  color          : $mainFontColor;
-  font-family    : open-sans-regular, sans-serif;
-  font-size      : 1.333rem;
-  font-weight    : 400;
-  line-height    : 0.75;
-  letter-spacing : 1px;
-  text-align     : center;
-  margin-right   : -3px;
-  margin-bottom  : 32px;
+  color: $mainFontColor;
+  font-family: open-sans-regular, sans-serif;
+  font-size: 1.333rem;
+  font-weight: 400;
+  line-height: 0.75;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-right: -3px;
+  margin-bottom: 32px;
 }
-.icon-form{
-  font-family : fontello, sans-serif;
+.icon-form {
+  font-family: fontello, sans-serif;
   font-style: normal;
-  font-size:  1.333rem;
+  font-size: 1.333rem;
   position: absolute;
   color: $mainFontColor;
   z-index: 1;

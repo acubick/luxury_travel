@@ -1,0 +1,824 @@
+@media (max-width: 1200px) {
+  .header__contacts {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    .contacts {
+      margin-right: 0;
+      max-width: none;
+      a {
+        padding: 10px 0;
+      }
+      span {
+        top: 8px;
+        left: -20px;
+      }
+    }
+  }
+  .header__links {
+    width: 45%;
+  }
+  // ================= //
+  .tour-type {
+    padding: 6rem 0;
+  }
+
+  .type__text {
+    margin-left: 0;
+  }
+  .type__images {
+    justify-content: space-around;
+  }
+  $images__itemSize: 220px;
+  .images__item {
+    width: $images__itemSize;
+    height: $images__itemSize;
+  }
+
+  // ========	Deals and Discounts  ========= //
+  .card__description {
+    max-height: 76px;
+  }
+  /*---------- Events  ----------*/
+  .events__card {
+    margin: 0 5px;
+  }
+
+  /*----------  FOOTER  ----------*/
+
+  .footer-primary {
+    padding-top: 40px;
+  }
+  .footer-primary__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-primary__width,
+  .footer-primary__width:first-child {
+    width: 45%;
+    height: 180px;
+  }
+  .newsletter form {
+    max-width: 300px;
+  }
+	.support,
+	.follow,
+	.newsletter{
+		padding-left: 0;
+	}
+}
+/*=============================================
+=                   930px                    =
+=============================================*/
+@media (max-width: 930px) {
+  .header-top {
+    flex-direction: column;
+  }
+  .header__contacts,
+  .header__links {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .header__links {
+    width: 100%;
+  }
+  .links_social {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: -2px 0 0;
+    padding: 0;
+    li {
+      max-width: 70px;
+      display: flex;
+      justify-content: center;
+    }
+    li a {
+      max-width: 70px;
+      border-radius: 0;
+    }
+  }
+  .links_social li:last-child {
+    max-width: 50px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header__search {
+    border-left: none;
+    a {
+      margin-right: 0;
+      margin-top: -1px;
+    }
+    i {
+      height: 22px;
+      margin-bottom: -4px;
+    }
+  }
+
+  // LOGO //
+  .logo {
+    a {
+      .icon-joomla {
+        font-size: 36px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 10px;
+      }
+      .logo__name {
+        padding-top: 4px;
+      }
+    }
+  }
+
+  /*=============================================
+	= MENU =
+	=============================================*/
+  .header__menu {
+    padding: 1rem;
+    nav {
+      a {
+        padding: 0.3rem 0.5rem;
+        font-size: 16px;
+      }
+    }
+  }
+
+  // ================= //
+  .tour-type {
+    padding: 5rem 0;
+  }
+
+  .images__item {
+    width: 180px;
+    height: 180px;
+  }
+  .img__text {
+    p {
+      font-size: 24px;
+    }
+  }
+
+  /*----------  Trips  ----------*/
+
+  .trips {
+    padding: 4.5rem 0 0;
+  }
+  .trips__title {
+    margin-bottom: 4rem;
+  }
+  .deal__title {
+    font-size: 1.2rem;
+  }
+  .deal__description {
+    font-size: 0.8rem;
+  }
+}
+
+/*=============================================
+=                   900px                    =
+=============================================*/
+
+@media (max-width: 900px) {
+  /*----------  Deals and Discounts  ----------*/
+
+  .discounts__wrap {
+    padding: 3.5rem 0 0;
+  }
+  .discounts__title {
+    margin: 0 auto 1.6rem;
+  }
+  .discounts__cards {
+    flex-direction: column;
+  }
+  .discounts__card {
+    max-width: 90%;
+    max-height: 225px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .card__img {
+    max-width: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .card__img img {
+    height: 100%;
+    width: auto;
+    margin-left: 50%;
+    margin-top: 0;
+  }
+  .card__text {
+    position: relative;
+    padding: 1rem 1.5rem;
+  }
+  .card__price {
+    position: absolute;
+    top: 40px;
+    left: -80px;
+  }
+  .card__description {
+    margin-bottom: 1.5rem;
+  }
+
+  /*---------- Events  ----------*/
+  .events {
+    padding: 4rem 0 5rem;
+  }
+  .title.events__title {
+    font-size: 2.5rem;
+  }
+  .notice.events__notice {
+    font-size: 1rem;
+  }
+  .events__card {
+    margin: 0 5px;
+  }
+  .events-card__title {
+    font-size: 1rem;
+  }
+  .events-card__info {
+    font-size: 0.9rem;
+  }
+}
+
+/*=============================================
+=                   770 px                    =
+=============================================*/
+
+@media (max-width: 770px) {
+  // ================= //
+  .tour-type {
+    padding: 2.5rem 0;
+  }
+  .type__text {
+    margin-bottom: 2.5rem;
+  }
+  .type__notice {
+    max-height: 52px;
+  }
+  .type__images {
+    justify-content: space-around;
+  }
+
+  $images__itemSize: 220px;
+  .images__item {
+    width: $images__itemSize;
+    height: $images__itemSize;
+    margin: 10px 20px;
+  }
+  /*----------  Deals and Discounts  ----------*/
+  .card__title {
+    font-size: 3rem;
+  }
+  .card__description {
+    max-height: 380px;
+    margin-bottom: 0.8rem;
+  }
+  .card__button {
+    padding: 0.7rem 2rem;
+  }
+  /*----------  Trips  ----------*/
+
+  .deal {
+    width: calc(50% - 1px);
+  }
+  /*---------- Events  ----------*/
+  .events__cards {
+    flex-direction: column;
+  }
+  .events__card {
+    max-width: 100%;
+    height: auto;
+  }
+  .events__card {
+    margin: 5px auto;
+    display: flex;
+  }
+  .events-card__picture {
+    margin-bottom: 0;
+    min-height: 100%;
+    height: 100%;
+    width: auto;
+  }
+  .events-card__picture img {
+    width: auto;
+    height: 100%;
+    max-width: 300px;
+  }
+
+  /*----------  TRAVEL  ----------*/
+  .travel {
+    height: 500px;
+  }
+  .travel-info {
+    .travel-info__caption {
+      font-size: 7rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .travel-info__button {
+      width: 120px;
+      height: 120px;
+      line-height: 7;
+    }
+  }
+  /*----------  FOOTER  ----------*/
+
+  .footer-primary {
+    padding-top: 30px;
+  }
+
+  .footer-primary__width,
+  .footer-primary__width:first-child {
+    width: 90%;
+    height: 180px;
+  }
+  .newsletter form {
+    max-width: 300px;
+  }
+}
+
+/*=============================================
+=                   700 px                    =
+=============================================*/
+@media (max-width: 700px) {
+  .intro-text {
+    width: 100%;
+  }
+  .text__title {
+    font-size: 3.3rem;
+  }
+  /*----------  Deals and Discounts  ----------*/
+  .card__price {
+    top: 35px;
+    margin-bottom: 0;
+    padding: 5px;
+    left: -50px;
+  }
+  .card__price span:nth-child(1) {
+    font-size: 1.4rem;
+    padding-left: 0.4;
+  }
+
+  .card__price span:nth-child(2) {
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    padding-left: 0.3rem;
+  }
+}
+
+/*=============================================
+=                   630 px                    =
+=============================================*/
+
+@media (max-width: 630px) {
+  /*---------- Events  ----------*/
+  .events-card__info {
+    margin-bottom: 1rem;
+  }
+  .events-card__title {
+    margin-bottom: 1rem;
+  }
+  .events-card__picture {
+    width: 600px;
+    overflow: hidden;
+  }
+}
+
+/*=============================================
+=                   600 px                    =
+=============================================*/
+
+@media (max-width: 600px) {
+  .header__menu {
+    // display: none;
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    box-shadow: #ccc;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+    padding: 0;
+    // overflow: auto; /*для того, чтобы меню скроллилось в случае, если оно не влезает на экран*/
+    left: -100%;
+    transition: all 0.4s ease;
+    nav {
+      flex-direction: column;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.75);
+      a {
+        width: 100%;
+        border-top: 0.5px solid rgba(250, 250, 250, 0.541);
+        text-align: center;
+        padding: 1rem 0.5rem;
+      }
+      a:hover {
+        background-color: rgba(145, 145, 145, 0.212);
+      }
+    }
+  }
+  .intro {
+    height: 700px;
+  }
+  .header__menu.open-menu {
+    left: 0;
+  }
+  .menu-burger__header {
+    position: relative; /* задаем относительное позиционирование */
+    top: 11px;
+    width: 40px; /* определяем размеры блока */
+    height: 35px;
+    display: block;
+    margin-left: 10px;
+  }
+  .menu-burger__header span,
+  .menu-burger__header:after,
+  .menu-burger__header:before {
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #d1d4d5;
+    margin: 0 auto;
+  }
+  .menu-burger__header span {
+    top: 21px;
+  }
+  .menu-burger__header:after,
+  .menu-burger__header:before {
+    content: "";
+  }
+  .menu-burger__header:after {
+    bottom: -4px;
+  }
+  .menu-burger__header:before {
+    top: 6px;
+  }
+  .menu-burger__header.open-menu span {
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .menu-burger__header.open-menu:before {
+    transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
+  }
+  .menu-burger__header.open-menu:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
+  }
+  .text__title {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-left: 0;
+  }
+  .text__item {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  .bottom__block {
+    width: 100%;
+    height: 100%;
+  }
+  /*----------  FOOTER  ----------*/
+  .footer-secondary__wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-secondary__copy-text {
+    text-align: center;
+  }
+  .footer-secondary__copy-design {
+    justify-content: center;
+  }
+}
+
+/*=============================================
+=                   545 px                    =
+=============================================*/
+
+@media (max-width: 545px) {
+  // ================= //
+
+  .type__images {
+    margin-top: 60px;
+  }
+  $images__itemSize: 180px;
+  .images__item {
+    width: $images__itemSize;
+    height: $images__itemSize;
+    margin: 10px;
+  }
+  /*----------  Trips  ----------*/
+
+  .title.trips__title {
+    font-size: 2.3rem;
+  }
+  /*----------  TRAVEL  ----------*/
+  .travel-info {
+    .travel-info__caption {
+      font-size: 5rem;
+      padding-top: 0;
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+    .travel-info__button {
+      width: 100px;
+      height: 100px;
+      line-height: 4;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/*=============================================
+=                   535 px                    =
+=============================================*/
+
+@media (max-width: 535px) {
+  .intro__wrap {
+    width: auto;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .find-tours {
+    left: 0;
+    right: 0;
+    min-width: auto;
+    min-height: auto;
+    width: 100%;
+    margin-right: 0;
+  }
+  /*----------  Deals and Discounts  ----------*/
+
+  .card__img {
+    max-width: 60%;
+  }
+  .card__text {
+    padding: 1rem 1rem;
+  }
+  .card__title {
+    font-size: 2rem;
+  }
+
+  .card__button {
+    font-size: 0.8rem;
+  }
+  /*----------  Trips  ----------*/
+
+  .deal {
+    width: 100%;
+  }
+  /*---------- Events  ----------*/
+  .events__card {
+    flex-direction: column;
+  }
+  .events-card__picture {
+    width: 100%;
+    overflow: visible;
+  }
+  .events-card__picture img {
+    width: 100%;
+    height: auto;
+    max-width: none;
+  }
+  .events-card__title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+}
+
+/*=============================================
+=                   500 px                    =
+=============================================*/
+@media (max-width: 500px) {
+  .contacts {
+    max-width: 170px;
+    a {
+      flex-direction: column;
+      position: relative;
+      .contacts__text {
+        top: 30px;
+        left: -150%;
+        background-color: #fff;
+        color: #000;
+        padding: 10px;
+        position: absolute;
+        min-width: 120px;
+        display: none;
+        transition: all 2s ease;
+      }
+    }
+  }
+  .contacts:hover {
+    .contacts__text {
+      display: block;
+    }
+  }
+  .find-tours {
+    padding: 20px 15px;
+    min-width: 300px;
+  }
+  .find-tours__title {
+    font-size: 2.667rem;
+  }
+
+  .find-tours__subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .text__title {
+    font-size: 1.7rem;
+  }
+  .text__item {
+    font-size: 1.2rem;
+  }
+  .bottom__text {
+    font-size: 16px;
+  }
+  .type__text {
+    margin-left: 0;
+  }
+  .title {
+    font-size: 2rem;
+    margin-right: 0;
+  }
+  .notice {
+    font-size: 1rem;
+  }
+}
+
+/*=============================================
+=                   420 px                    =
+=============================================*/
+
+@media (max-width: 420px) {
+  // ================= //
+  .tour-type {
+    padding: 2rem 0;
+  }
+  .type__text {
+    margin-bottom: 1rem;
+  }
+
+  $images__itemSize: 170px;
+  .images__item {
+    width: $images__itemSize;
+    height: $images__itemSize;
+    margin: 10px 0;
+  }
+  /*----------  Deals and Discounts  ----------*/
+  .discounts__card {
+    max-height: 360px;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 60px;
+    transition: all 0.7s ease;
+  }
+  .card__img {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    transition: all 0.7s ease;
+    z-index: -1;
+  }
+  .card__img img {
+    height: auto;
+    width: 100%;
+    margin-top: -18%;
+  }
+  .card__text {
+    bottom: 0;
+    padding: 1rem 1rem;
+    max-height: 200px;
+    transition: all 0.7s ease;
+  }
+  .card__price {
+    left: 0;
+  }
+  .card__title {
+    font-size: 2rem;
+  }
+
+  .card__button {
+    font-size: 0.8rem;
+  }
+  .discounts__card:hover {
+    height: 400px;
+    margin-bottom: 5px;
+    margin-top: -85px;
+    z-index: 200;
+    .card__img {
+      opacity: 1;
+      top: 0;
+    }
+    .card__text {
+      bottom: -160px;
+
+      background-color: #fff;
+    }
+  }
+  /*----------  Trips  ----------*/
+
+  .title.trips__title {
+    font-size: 1.6rem;
+  }
+  /*----------  TRAVEL  ----------*/
+  .travel-info {
+    .travel-info__caption {
+      font-size: 3rem;
+    }
+    .title {
+      font-size: 1rem;
+    }
+    .travel-info__button {
+      width: 100px;
+      height: 50px;
+      line-height: 4;
+      font-size: 0.8rem;
+      border-radius: 30px;
+    }
+  }
+  /*----------  FOOTER  ----------*/
+
+  .footer-primary {
+    padding-top: 20px;
+  }
+
+  .footer-primary__width,
+  .footer-primary__width:first-child {
+    width: 100%;
+    height: 200px;
+  }
+  .newsletter form {
+    max-width: 300px;
+  }
+  .findfinder__title {
+    margin-bottom: 15px;
+  }
+  .footer__title {
+    font-size: 1.5rem;
+  }
+  .follow,
+  .support,
+  .newsletter {
+    padding-left: 0;
+  }
+  .footer-primary__width {
+    padding: 10px 0 0;
+    width: 100%;
+    height: 150px;
+  }
+  .follow__title,
+  .support__title,
+  .footer__title {
+    margin-bottom: 0.2rem;
+  }
+}
+/*=============================================
+=                   365 px                    =
+=============================================*/
+
+@media (max-width: 365px) {
+  // =======  Tour Type  ========== //
+  .type__text {
+    margin-bottom: 3rem;
+  }
+  .type__images {
+    justify-content: space-between;
+  }
+  $images__itemSize: 150px;
+  .images__item {
+    width: $images__itemSize;
+    height: $images__itemSize;
+    margin: 10px 0;
+  }
+  .images__item .img__text p {
+    font-size: 20px;
+  }
+  /*----------  Deals and Discounts  ----------*/
+  .card__title {
+    align-self: flex-end;
+  }
+}

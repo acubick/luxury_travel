@@ -9,13 +9,21 @@ initial-scale=1.0,
 maximum-scale=1.0,
 minimum-scale=1.0" />
 
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-	<link rel="manifest" href="site.webmanifest" />
-	<link rel="mask-icon" href="static/safari-pinned-tab.svg" color="#5bbad5" />
-	<meta name="msapplication-TileColor" content="#da532c" />
-	<meta name="theme-color" content="#ffffff" />
+<meta property="og:title" content="Award winning agency" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://acubick.github.io/travel/" />
+<meta property="og:image" content="http://acubick.github.io/travel/static/images/bg_luxury_travel.png" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="static/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="static/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="static/icons/favicon-16x16.png">
+	<link rel="manifest" href="static/icons/site.webmanifest">
+	<link rel="mask-icon" href="static/icons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="static/icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="static/icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
 	<link rel="stylesheet" href="static/css/styles.css" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Luxury Travel</title>
@@ -23,26 +31,27 @@ minimum-scale=1.0" />
 
 <body>
 	<div class="wrapper">
-		<div class="header">
+		<div class="header" id="home">
 			<div class="header__top">
 				<div class="container">
-					<div class="header__inner">
+					<div class="header__inner header-top">
 						<div class="header__contacts">
 							<span itemprop="telephone" class="contacts header__phone">
 								<a href="tel:+14200006000" title="Call us">
-									<span class="icon icon-phone">&#xe801;</span> +1
-									420-000-6000
+									<span class="icon icon-phone">&#xe801;</span>
+									<span class="contacts__text"> +1 420-000-6000 </span>
 								</a>
 							</span>
 							<span itemprop="email" class="contacts header__email">
 								<a href="mailto:hello@website.com?subject=My question" title="Write to us">
 									<span class="icon icon-mail">&#xf0e0;</span>
-									hello@website.com
+									<span class="contacts__text">hello@website.com</span>
 								</a>
 							</span>
 							<span itemprop="openingHours" class="contacts header__shedule">
 								<a href="#!" title="Working hours">
-									<span class="icon icon-clock">&#xe802;</span> 6am - 11pm
+									<span class="icon icon-clock">&#xe802;</span>
+									<span class="contacts__text">6am - 11pm</span>
 								</a>
 							</span>
 						</div>
@@ -66,14 +75,13 @@ minimum-scale=1.0" />
 									<a title="Whatsapp" href="#!"><i class="icon icon-whatsapp">&#xf232;</i>
 									</a>
 								</li>
+								<li class="header__search" title="Search tour">
+									<a>
+										<i class="icon icon-search">&#xe803;</i>
+									</a </li>
 							</ul>
 							<!-- /.header__links -->
 
-							<div class="header__search">
-								<span title="Search tour">
-									<i class="icon icon-search">&#xe803;</i>
-								</span>
-							</div>
 							<!-- /.header__search -->
 						</div>
 					</div>
@@ -98,15 +106,17 @@ minimum-scale=1.0" />
 							<!-- /.logo -->
 						</div>
 						<!-- /.header__logo -->
-
+						<div class="menu-burger__header">
+							<span></span>
+						</div>
 						<div class="header__menu">
-							<nav>
-								<a href="#!">Home </a>
-								<a href="#!">Blog </a>
-								<a href="#!">Gallery </a>
-								<a href="#!">Activities</a>
-								<a href="#!">Deals</a>
-								<a href="#!">Contact</a>
+							<nav id="nav">
+								<a href="#home">Home </a>
+								<a href="#blog">Blog </a>
+								<a href="#gallery">Gallery </a>
+								<a href="#events">Activities</a>
+								<a href="#deals">Deals</a>
+								<a href="#contacts">Contact</a>
 							</nav>
 						</div>
 						<!-- /.header__menu -->
@@ -132,7 +142,7 @@ minimum-scale=1.0" />
 					</div>
 					<!-- /.intro-text -->
 
-					<form id="form" action="#!" method="post" class="find__tours find-tours active">
+					<form id="form" action="#!" method="post" class="find__tours find-tours">
 						<h3 class="find-tours__title">Search Tours</h3>
 						<h4 class="find-tours__subtitle">Find your dream tour today!</h4>
 						<label for="search">
@@ -178,7 +188,7 @@ minimum-scale=1.0" />
 			<!-- /.intro-bottom -->
 		</div>
 		<!-- /.intro -->
-		<section class="tour-type">
+		<section class="tour-type" id="blog">
 			<div class="container">
 				<div class="type__wrap">
 					<div class="type__text">
@@ -253,7 +263,7 @@ minimum-scale=1.0" />
 			</div>
 			<!-- /.container -->
 		</section>
-		<section class="discounts">
+		<section class="discounts" id="deals">
 			<div class="discounts__overlay"></div>
 			<!-- /.discounts__inner -->
 
@@ -357,7 +367,7 @@ minimum-scale=1.0" />
 			<!-- /.container -->
 		</section>
 		<!-- /.discounts -->
-		<section class="trips">
+		<section class="trips" id="gallery">
 			<h3 class="title trips__title">Find a Tour by Beautiful Trips</h3>
 			<!-- /.title -->
 			<div class="trips__deals">
@@ -461,7 +471,7 @@ minimum-scale=1.0" />
 		</section>
 		<!-- /.trips -->
 
-		<section class="events">
+		<section class="events" id="events">
 			<div class="container">
 				<div class="events__text">
 					<h3 class="title events__title">News & Events</h3>
@@ -472,94 +482,66 @@ minimum-scale=1.0" />
 						Scelerisque, in nec velit augue aenean a, vut velit nec! Phasellus
 						aliquam odio.
 					</p>
-					<!-- /.events__notice -->
 				</div>
-				<!-- /.events__text -->
 				<div class="events__cards">
 					<div class="events__card events-card">
 						<picture class="events-card__picture">
 							<img src="./static/images/events/venice.png" alt="venice.png" />
 						</picture>
-						<!-- /.events-card__picture -->
 						<div class="events-card__features">
 							<h3 class="events-card__title">Living the Travel Lifestyle</h3>
-							<!-- /.events-card__title -->
 							<div class="events-card__info">
 								<div class="events-card__user">Admin</div>
-								<!-- /.events-card__user -->
 
 								<div class="events-card__date">May 11, 2015</div>
-								<!-- /.events-card__date -->
 							</div>
-							<!-- /.events-card__info -->
 
 							<p class="events-card__description">
 								Egestas dignissim a enim lorem a mus egestas risus porta? Sed.
 								Scelerisque, in nec velit augue aenean a, vut velit nec!
 							</p>
-							<!-- /.events-card__description -->
 						</div>
-						<!-- /.events-card__features -->
 					</div>
-					<!-- /.events__card -->
 
 					<div class="events__card events-card">
 						<picture class="events-card__picture">
 							<img src="./static/images/events/beach.png" alt="beach.png" />
 						</picture>
-						<!-- /.events-card__picture -->
 						<div class="events-card__features">
 							<h3 class="events-card__title">Living the Travel Lifestyle</h3>
-							<!-- /.events-card__title -->
 							<div class="events-card__info">
 								<div class="events-card__user">Admin</div>
-								<!-- /.events-card__user -->
 
 								<div class="events-card__date">May 11, 2015</div>
-								<!-- /.events-card__date -->
 							</div>
-							<!-- /.events-card__info -->
 
 							<p class="events-card__description">
 								Egestas dignissim a enim lorem a mus egestas risus porta? Sed.
 								Scelerisque, in nec velit augue aenean a, vut velit nec!
 							</p>
-							<!-- /.events-card__description -->
 						</div>
-						<!-- /.events-card__features -->
 					</div>
-					<!-- /.events__card -->
 
 					<div class="events__card events-card">
 						<picture class="events-card__picture">
 							<img src="./static/images/events/family.png" alt="family.png" />
 						</picture>
-						<!-- /.events-card__picture -->
 						<div class="events-card__features">
 							<h3 class="events-card__title">Living the Travel Lifestyle</h3>
-							<!-- /.events-card__title -->
 							<div class="events-card__info">
 								<div class="events-card__user">Admin</div>
-								<!-- /.events-card__user -->
 
 								<div class="events-card__date">May 11, 2015</div>
-								<!-- /.events-card__date -->
 							</div>
-							<!-- /.events-card__info -->
 
 							<p class="events-card__description">
 								Egestas dignissim a enim lorem a mus egestas risus porta? Sed.
 								Scelerisque, in nec velit augue aenean a, vut velit nec!
 							</p>
-							<!-- /.events-card__description -->
 						</div>
-						<!-- /.events-card__features -->
 					</div>
-					<!-- /.events__card -->
 				</div>
-				<!-- /.events__cards -->
 			</div>
-			<!-- /.container -->
 		</section>
 		<section class="travel">
 			<div class="travel__info">
@@ -568,19 +550,15 @@ minimum-scale=1.0" />
 					<h3 class="travel-info__title title">Peace of Mind guaranteed!</h3>
 					<button class="travel-info__button">Find Tours</button>
 				</div>
-				<!-- /.travel-info -->
 			</div>
-			<!-- /.travel__info -->
 		</section>
-		<!-- /.luxury-travel -->
 
 		<footer>
-			<div class="footer-primary">
+			<div class="footer-primary" id="contacts">
 				<div class="container">
 					<div class="footer-primary__wrapper">
 						<div class="findfinder footer-primary__width">
 							<h4 class="findfinder__title footer__title">Findfinder LLC</h4>
-							<!-- /.findfinder__title -->
 							<address class="findfinder__address">
 								<a class="findfinder__contact" href="#!">1400 Pennsylvania Ave. Washington, DC</a>
 								<a class="findfinder__contact" href="tel:+15555555555" title="Call us">P: 24/7 customer support:
@@ -590,13 +568,10 @@ minimum-scale=1.0" />
 									E: info@tripfinder.com
 								</a>
 							</address>
-							<!-- /.findfinder__contacts -->
 						</div>
-						<!-- /.findfinder -->
 
 						<div class="support footer-primary__width">
 							<h4 class="support__title footer__title">support</h4>
-							<!-- /.support__title -->
 
 							<ul class="support__list">
 								<li class="support__item">
@@ -615,13 +590,10 @@ minimum-scale=1.0" />
 									</a>
 								</li>
 							</ul>
-							<!-- /.support__list -->
 						</div>
-						<!-- /.support -->
 
 						<div class="follow footer-primary__width">
 							<h4 class="follow__title footer__title">Follow us</h4>
-							<!-- /.follow__title -->
 							<ul class="follow__social">
 								<li class="follow-social__item">
 									<a href="#!" class="follow-social__link">
@@ -644,31 +616,26 @@ minimum-scale=1.0" />
 									</a>
 								</li>
 							</ul>
-							<!-- /.follow__social -->
 						</div>
-						<!-- /.follow -->
 
 						<div class="newsletter footer-primary__width">
 							<h4 class="newsletter__title footer__title">Newsletter</h4>
-							<!-- /.newsletter_title-->
 
-							<form action="#!" method="#!">
+							<form>
 								<label for="email">
 									<input class="email__input" type="email" id="email" placeholder="Enter email" value="" name="email" />
 								</label>
 								<button name="btn" type="submit">Submit</button>
 							</form>
 						</div>
-						<!-- /.newsletter -->
 					</div>
 
-					<!-- /.footer-primary__wrapper -->
 				</div>
-				<!-- /.container -->
-			</div>
-			<!-- /.footer-primary -->
 
-			<div class="footer-secondary">
+			</div>
+
+
+	<div class="footer-secondary">
 				<div class="container">
 					<div class="footer-secondary__wrapper">
 						<p class="footer-secondary__copy-text">
@@ -678,14 +645,14 @@ minimum-scale=1.0" />
 							Design by:<span class="copy-design__icon"></span>PSDFreebies.com
 						</p>
 					</div>
-					<!-- /.footer-secondary__wrapper -->
 				</div>
-				<!-- /.container -->
-			</div>
-			<!-- /.footer-secondary -->
+			</div> 
+
 		</footer>
 	</div>
-	<!-- /.wrapper-->
+	<script src="static/js/vendors/jquery.min.js"></script>
+	<script src="static/js/vendors/libs.js"></script>
+	<script src="static/js/main.js"></script>
 </body>
 
 </html>

@@ -6,8 +6,8 @@
 "base/base",
 "base/helpers";
 // @import "outline";
-.wrapper {
-    //padding-bottom : 11rem;
+body .wrapper {
+   min-width: 320px;
 }
 .wrapper_out {
     //max-width: 1600px;
@@ -27,4 +27,5 @@
 "blocks/trips",
 "blocks/events",
 "blocks/travel",
-"blocks/footer";
+"blocks/footer",
+"media";
